@@ -101,7 +101,7 @@
 	<string>
 	"entity.h"
 
-1395959408 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+1395959510 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
 	<iostream>
 	"entity.h"
 	"hero.h"
@@ -114,4 +114,9 @@
 
 1395936125 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
+
+1396095975 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.cpp
+	"fighter.h"
+
+1396095775 z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.h
 
