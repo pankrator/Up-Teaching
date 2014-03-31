@@ -1,11 +1,9 @@
 #include <iostream>
-#include "entity.h"
 #include "fighter.h"
-#include "arena.h"
 #include "Niki.h"
+#include "arena.h"
 
 using namespace std;
-
 
 int main()
 {

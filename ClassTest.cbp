@@ -32,11 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Niki.h" />
+		<Unit filename="arena.h" />
 		<Unit filename="dungeon.cpp" />
 		<Unit filename="dungeon.h" />
 		<Unit filename="entity.cpp" />
 		<Unit filename="entity.h" />
 		<Unit filename="fight.cpp" />
+		<Unit filename="fighter.cpp" />
+		<Unit filename="fighter.h" />
 		<Unit filename="hero.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="orc.cpp" />

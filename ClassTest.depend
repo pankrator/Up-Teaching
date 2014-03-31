@@ -60,37 +60,37 @@
 	"orc.h"
 	<typeinfo>
 
-1395936125 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\dungeon.cpp
+1395939725 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\dungeon.cpp
 	"dungeon.h"
 	"hero.h"
 	"orc.h"
 	<typeinfo>
 
-1395936125 z:\niki si\c++ projects\up teaching\up teaching\classtest\dungeon.h
+1395939725 z:\niki si\c++ projects\up teaching\up teaching\classtest\dungeon.h
 	<iostream>
 	<fstream>
 	<string>
 	"entity.h"
 	<vector>
 
-1395959344 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
+1395962944 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
 	<string>
 	"weapon.cpp"
 
-1395936125 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
+1395939725 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1395958053 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
+1395961653 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
 	<string>
 	"entity.h"
 
-1395936125 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
+1395939725 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
 	"entity.h"
 
-1395959368 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
+1395962968 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
 	"entity.h"
 
-1395959379 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fight.cpp
+1395962979 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fight.cpp
 	"hero.h"
 	"orc.h"
 	<cstdlib>
@@ -101,22 +101,26 @@
 	<string>
 	"entity.h"
 
-1395959510 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+1396286588 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
 	<iostream>
-	"entity.h"
-	"hero.h"
-	"orc.h"
-	"dungeon.h"
-	<vector>
+	"fighter.h"
+	"Niki.h"
+	"arena.h"
 
-1395959413 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.cpp
+1395963013 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.cpp
 	"orc.h"
 
-1395936125 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
+1395939725 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1396095975 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.cpp
+1396187026 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.cpp
 	"fighter.h"
 
-1396095775 z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.h
+1396286913 z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.h
+
+1396286659 z:\niki si\c++ projects\up teaching\up teaching\classtest\arena.h
+	"fighter.h"
+
+1396186770 z:\niki si\c++ projects\up teaching\up teaching\classtest\niki.h
+	"fighter.h"
 

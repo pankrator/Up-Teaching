@@ -16,27 +16,33 @@ void Fighter::create(HeroType className)
     }
 }
 
-int Fighter::usePotion()
+void Fighter::usePotion()
 {
+    if(turn == false)
+        return;
+
     if(numOfPotions > 0)
     {
+        this->turn = false;
         this->health+=30;
         numOfPotions--;
-        return 1;
     }
-
-    return 0;
 }
 
-int Fighter::attack(Fighter* other)
+void Fighter::attack(Fighter* other)
 {
+    if(turn == false)
+        return;
+
+    this->turn = false;
     other->takeHealth(this->damage);
-
-    return 1;
 }
 
-int Fighter::useMagic(MagicType magicType, Fighter* other)
+void Fighter::useMagic(MagicType magicType, Fighter* other)
 {
+    if(turn == false)
+        return;
+
     switch(magicType)
     {
     case Freeze:
@@ -49,8 +55,6 @@ int Fighter::useMagic(MagicType magicType, Fighter* other)
         this->damage+=15;
         break;
     }
-
-    return 1;
 }
 
 void Fighter::takeHealth(int amount)

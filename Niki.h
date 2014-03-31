@@ -11,12 +11,12 @@ public:
 
     }
 
-    virtual int fight(Fighter* other)
+    virtual void fight(Fighter* other)
     {
         if(this->getHealth() < 40)
-            return usePotion();
+            usePotion();
 
-        return attack(other);
+        attack(other);
     }
 };
 

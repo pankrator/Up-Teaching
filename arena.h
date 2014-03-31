@@ -19,13 +19,14 @@ public:
         while(first->getHealth() > 0 && second->getHealth() > 0)
         {
             /** TODO: catch the case when someone is freezed */
-            while(first->fight(second) == 0)
                 first->fight(second);
+                first->setTurn(true);
 
-            while(second->fight(first) == 0)
                 second->fight(first);
+                second->setTurn(true);
         }
     }
+
 };
 
 
