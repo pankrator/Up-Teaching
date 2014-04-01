@@ -7,7 +7,10 @@ using namespace std;
 
 int main()
 {
-    Arena arena();
+    Arena* arena = new Arena();
     Fighter* niki = new Niki();
+    Fighter* other = new Bron();
+
+    arena->fight(niki, other);
     return 0;
 }

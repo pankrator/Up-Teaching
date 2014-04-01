@@ -35,6 +35,15 @@ void Fighter::attack(Fighter* other)
         return;
 
     this->turn = false;
+
+    if(this->frenzy == true)
+    {
+        this->damage = 45;
+    }
+    else
+    {
+        this->damage = 30;
+    }
     other->takeHealth(this->damage);
 }
 
@@ -46,13 +55,27 @@ void Fighter::useMagic(MagicType magicType, Fighter* other)
     switch(magicType)
     {
     case Freeze:
-        other->freezed = true;
+        if(manaPoints >= 30)
+        {
+            other->setFreezed(true);
+            manaPoints -= 30;
+            turn = false;
+        }
         break;
     case Fireball:
-        other->takeHealth(45);
+        if(this->manaPoints >= 20)
+        {
+            other->takeHealth(45);
+            this->manaPoints -= 20;
+            turn = false;
+        }
         break;
     case Frenzy:
-        this->damage+=15;
+        if(this->manaPoints >= 25)
+        {
+            this->frenzy = true;
+            this->manaPoints -= 25;
+        }
         break;
     }
 }

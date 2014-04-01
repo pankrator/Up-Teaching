@@ -24,6 +24,7 @@ private:
     int health;
     bool freezed;
     bool turn;
+    bool frenzy;
 
     void create(HeroType);
     void takeHealth(int amount);
@@ -35,6 +36,7 @@ public:
     {
         this->freezed = false;
         this->turn = true;
+        this->frenzy = false;
         this->create(className);
     }
 
@@ -53,9 +55,12 @@ public:
 
     /** GETTERS **/
     int getHealth() const { return this->health; }
+    bool isFreezed() const { return this->freezed; }
+    bool getTurn() const { return this->turn; }
 
     /** SETTERS **/
     void setTurn(bool turn) { this->turn = turn; }
+    void setFreezed(bool freeze) { this->freezed = freeze; }
 
 };
 

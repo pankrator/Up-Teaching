@@ -3,27 +3,55 @@
 
 #include "fighter.h"
 
+using namespace std;
+
 class Arena
 {
 public:
     Arena() {}
-    /**
-        Function return codes:
-                    TRUE | FALSE
-        usePotion : 55 | 20;
-        attack : 43 | 10;
-        useMagic : 15 | 5;
-    **/
+
     void fight(Fighter* first, Fighter* second)
     {
         while(first->getHealth() > 0 && second->getHealth() > 0)
         {
-            /** TODO: catch the case when someone is freezed */
-                first->fight(second);
-                first->setTurn(true);
+            if(first->getHealth() <= 0)
+            {
+                cout<<"Second fighter is the winner!"<<endl;
+                return;
+            }
 
-                second->fight(first);
-                second->setTurn(true);
+            if (!first->isFreezed())
+            {
+                while(first->getTurn() == true)
+                    first->fight(second);
+            } else
+            {
+                cout<<"First is freezed"<<endl;
+            }
+
+
+            if(second->getHealth() <= 0)
+            {
+                cout<<"First fighter is the winner!"<<endl;
+                return;
+            }
+
+            if(!second->isFreezed())
+            {
+                while(second->getTurn() == true)
+                    second->fight(first);
+            }
+            else
+            {
+                cout<<"Second is freezed"<<endl;
+            }
+
+            /** Reset state **/
+            first->setFreezed(false);
+            first->setTurn(true);
+
+            second->setFreezed(false);
+            second->setTurn(true);
         }
     }
 
