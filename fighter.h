@@ -1,6 +1,10 @@
 #ifndef FIGHT_H_INCLUDED
 #define FIGHT_H_INCLUDED
 
+#include <string>
+
+using namespace std;
+
 enum MagicType
 {
     Fireball,
@@ -18,6 +22,7 @@ enum HeroType
 class Fighter
 {
 private:
+    string name;
     int numOfPotions;
     int damage;
     int manaPoints;
@@ -30,9 +35,8 @@ private:
     void takeHealth(int amount);
 
 public:
-    Fighter() {}
 
-    Fighter(HeroType className)
+    Fighter(HeroType className, string name) : name(name)
     {
         this->freezed = false;
         this->turn = true;
@@ -54,6 +58,7 @@ public:
     virtual void fight(Fighter* other) = 0;
 
     /** GETTERS **/
+    string getName() const { return this->name; }
     int getHealth() const { return this->health; }
     bool isFreezed() const { return this->freezed; }
     bool getTurn() const { return this->turn; }

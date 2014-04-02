@@ -8,7 +8,7 @@ using namespace std;
 class Niki : public Fighter
 {
 public:
-    Niki() : Fighter(Warrior)
+    Niki() : Fighter(Warrior, "Niki")
     {
 
     }
@@ -25,26 +25,24 @@ public:
 class Bron : public Fighter
 {
 public:
-    Bron() : Fighter(Warrior)
+    Bron() : Fighter(Warrior, "Bron")
     {
 
     }
 
     virtual void fight(Fighter* other)
     {
-        if(this->getHealth() < 20)
-            usePotion();
-
+        /**
+            It always freezes its oponents
+        */
         if(!other->isFreezed())
         {
             useMagic(Freeze, other);
-            cout<<"Freeze"<<endl;
         }
 
         if(other->getHealth() <= 45)
             useMagic(Frenzy, other);
 
-        cout<<"Attack"<<endl;
         attack(other);
     }
 };

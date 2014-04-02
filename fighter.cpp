@@ -1,4 +1,7 @@
 #include "fighter.h"
+#include <iostream>
+
+using namespace std;
 
 void Fighter::create(HeroType className)
 {
@@ -7,12 +10,12 @@ void Fighter::create(HeroType className)
     if(className == Warrior)
     {
         manaPoints = 50;
-        damage = 30;
+        damage = 10;
     }
     else
     {
         manaPoints = 100;
-        damage = 15;
+        damage = 5;
     }
 }
 
@@ -20,7 +23,6 @@ void Fighter::usePotion()
 {
     if(turn == false)
         return;
-
     if(numOfPotions > 0)
     {
         this->turn = false;
@@ -38,11 +40,11 @@ void Fighter::attack(Fighter* other)
 
     if(this->frenzy == true)
     {
-        this->damage = 45;
+        this->damage = 20;
     }
     else
     {
-        this->damage = 30;
+        this->damage = 10;
     }
     other->takeHealth(this->damage);
 }
@@ -65,7 +67,7 @@ void Fighter::useMagic(MagicType magicType, Fighter* other)
     case Fireball:
         if(this->manaPoints >= 20)
         {
-            other->takeHealth(45);
+            other->takeHealth(25);
             this->manaPoints -= 20;
             turn = false;
         }
