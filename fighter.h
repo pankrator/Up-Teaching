@@ -30,17 +30,20 @@ private:
     bool freezed;
     bool turn;
     bool frenzy;
+    MagicType used;
 
     void create(HeroType);
     void takeHealth(int amount);
 
 public:
+    HeroType type;
 
-    Fighter(HeroType className, string name) : name(name)
+    Fighter(HeroType className, string name) : name(name), type(className)
     {
         this->freezed = false;
         this->turn = true;
         this->frenzy = false;
+        this->used = Frenzy;
         this->create(className);
     }
 

@@ -17,11 +17,11 @@ public:
 
             if(first->getHealth() <= 0)
             {
-                cout<<second->getName()<<" is the winner!"<<endl;
+                cout<<second->getName()<<" is the winner! He is with "<<second->getHealth()<<" health"<<endl;
                 return;
             }
 
-            if (!first->isFreezed())
+            if(!first->isFreezed())
             {
                 while(first->getTurn() == true)
                 {
@@ -29,12 +29,12 @@ public:
                 }
             }
 
-            first->setFreezed(false);
             first->setTurn(true);
+            first->setFreezed(false);
 
             if(second->getHealth() <= 0)
             {
-                cout<<first->getName()<<" is the winner!"<<endl;
+                cout<<first->getName()<<" is the winner! He is with "<<first->getHealth()<<" health"<<endl;
                 return;
             }
 
@@ -46,22 +46,24 @@ public:
                 }
             }
 
-            cout<<first->getHealth()<<" "<<second->getHealth()<<endl;
+            //cout<<first->getHealth()<<" "<<second->getHealth()<<endl;
 
             /** Reset state **/
-            second->setFreezed(false);
+
             second->setTurn(true);
+            second->setFreezed(false);
+
         }
 
         if(first->getHealth() <= 0)
         {
-            cout<<second->getName()<<" is the winner!"<<endl;
+            cout<<second->getName()<<" is the winner! He is with "<<second->getHealth()<<" health"<<endl;
             return;
         }
 
         if(second->getHealth() <= 0)
         {
-            cout<<first->getName()<<" is the winner!"<<endl;
+            cout<<first->getName()<<" is the winner! He is with "<<first->getHealth()<<" health"<<endl;
             return;
         }
     }

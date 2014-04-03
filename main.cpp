@@ -11,6 +11,6 @@ int main()
     Fighter* niki = new Niki();
     Fighter* other = new Bron();
 
-    arena->fight(niki, other);
+    arena->fight(other, niki);
     return 0;
 }

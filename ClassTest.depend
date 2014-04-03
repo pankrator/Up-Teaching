@@ -101,7 +101,7 @@
 	<string>
 	"entity.h"
 
-1396476087 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+1396552795 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
 	<iostream>
 	"fighter.h"
 	"Niki.h"
@@ -113,16 +113,16 @@
 1396473068 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1396476174 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.cpp
+1396552566 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.cpp
 	"fighter.h"
 	<iostream>
 
-1396476072 z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.h
+1396552460 z:\niki si\c++ projects\up teaching\up teaching\classtest\fighter.h
 	<string>
 
-1396476317 z:\niki si\c++ projects\up teaching\up teaching\classtest\arena.h
+1396552777 z:\niki si\c++ projects\up teaching\up teaching\classtest\arena.h
 	"fighter.h"
 
-1396476106 z:\niki si\c++ projects\up teaching\up teaching\classtest\niki.h
+1396552687 z:\niki si\c++ projects\up teaching\up teaching\classtest\niki.h
 	"fighter.h"
 

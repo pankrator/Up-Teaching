@@ -15,8 +15,10 @@ public:
 
     virtual void fight(Fighter* other)
     {
-//        if(this->getHealth() < 40)
-            //usePotion();
+        if(this->getHealth() < 40)
+            usePotion();
+
+        useMagic(Frenzy, other);
 
         attack(other);
     }
@@ -25,23 +27,24 @@ public:
 class Bron : public Fighter
 {
 public:
-    Bron() : Fighter(Warrior, "Bron")
+    Bron() : Fighter(Magician, "Bron")
     {
 
     }
 
     virtual void fight(Fighter* other)
     {
-        /**
-            It always freezes its oponents
-        */
         if(!other->isFreezed())
         {
             useMagic(Freeze, other);
         }
+        if(this->getHealth() <= 30)
+            usePotion();
 
-        if(other->getHealth() <= 45)
-            useMagic(Frenzy, other);
+        //if(other->getHealth() < 25)
+        useMagic(Fireball, other);
+
+        useMagic(Frenzy, other);
 
         attack(other);
     }
