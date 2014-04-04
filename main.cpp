@@ -2,15 +2,20 @@
 #include "fighter.h"
 #include "Niki.h"
 #include "arena.h"
+#include "Test.h"
 
 using namespace std;
 
 int main()
 {
     Arena* arena = new Arena();
-    Fighter* niki = new Niki();
-    Fighter* other = new Bron();
+    Fighter* girls = new Girls();
+    Fighter* harry = new Harry();
+    Fighter* tnt = new TNT();
+    Fighter* simon = new Simon();
+    Fighter* angel = new Angel();
+    Fighter* newFight = new NewFight();
 
-    arena->fight(other, niki);
+    arena->fight(newFight, angel);
     return 0;
 }

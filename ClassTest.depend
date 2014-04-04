@@ -126,3 +126,71 @@
 1396552687 z:\niki si\c++ projects\up teaching\up teaching\classtest\niki.h
 	"fighter.h"
 
+1396590226 source:d:\oop project\up-teaching\entity.cpp
+	"entity.h"
+
+1396590226 d:\oop project\up-teaching\entity.h
+	<string>
+	"weapon.cpp"
+
+1396590226 d:\oop project\up-teaching\weapon.cpp
+	<string>
+
+1396590226 source:d:\oop project\up-teaching\fight.cpp
+	"hero.h"
+	"orc.h"
+	<cstdlib>
+	<ctime>
+	<iostream>
+
+1396590226 d:\oop project\up-teaching\hero.h
+	<string>
+	"entity.h"
+
+1396590226 d:\oop project\up-teaching\orc.h
+	"entity.h"
+
+1395387229 source:d:\oop project\up-teaching\orc.cpp
+	"orc.h"
+
+1396590226 source:d:\oop project\up-teaching\weapon.cpp
+	<string>
+
+1396590226 source:d:\oop project\up-teaching\dungeon.cpp
+	"dungeon.h"
+	"hero.h"
+	"orc.h"
+	<typeinfo>
+
+1396590226 d:\oop project\up-teaching\dungeon.h
+	<iostream>
+	<fstream>
+	<string>
+	"entity.h"
+	<vector>
+
+1396592417 source:d:\oop project\up-teaching\fighter.cpp
+	"fighter.h"
+	<iostream>
+
+1396590226 d:\oop project\up-teaching\fighter.h
+	<string>
+
+1396594965 source:d:\oop project\up-teaching\main.cpp
+	<iostream>
+	"fighter.h"
+	"Niki.h"
+	"arena.h"
+	"Test.h"
+
+1396590226 d:\oop project\up-teaching\niki.h
+	"fighter.h"
+
+1396590226 d:\oop project\up-teaching\arena.h
+	"fighter.h"
+
+1396595146 d:\oop project\up-teaching\test.h
+	"fighter.h"
+	<iostream>
+	<stdlib.h>
+

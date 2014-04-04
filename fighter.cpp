@@ -21,11 +21,8 @@ void Fighter::create(HeroType className)
 
 void Fighter::usePotion()
 {
-    if(turn == false)
-        return;
     if(numOfPotions > 0)
     {
-        this->turn = false;
         this->health+=30;
         numOfPotions--;
         cout<<this->name<<" used a health potion"<<endl;
@@ -38,14 +35,16 @@ void Fighter::attack(Fighter* other)
         return;
 
     this->turn = false;
-
-    if(this->frenzy == true)
+    if(type == Warrior)
     {
-        this->damage = 20;
-    }
-    else
-    {
-        this->damage = 10;
+        if(this->frenzy == true)
+        {
+            this->damage = 30;
+        }
+        else
+        {
+            this->damage = 10;
+        }
     }
     other->takeHealth(this->damage);
     cout<<this->name<<" attacked his opponent"<<endl;
@@ -65,11 +64,10 @@ void Fighter::useMagic(MagicType magicType, Fighter* other)
             used = Frenzy;
             return;
         }
-        if(manaPoints >= 30)
+        if(manaPoints >= 40)
         {
             other->setFreezed(true);
-            manaPoints -= 30;
-            turn = false;
+            manaPoints -= 40;
             used = Freeze;
             cout<<this->name<<" freezed his opponent"<<endl;
         }
@@ -86,10 +84,10 @@ void Fighter::useMagic(MagicType magicType, Fighter* other)
         break;
     case Frenzy:
         if(type != Warrior) { return; }
-        if(this->manaPoints >= 25)
+        if(this->manaPoints >= 15)
         {
             this->frenzy = true;
-            this->manaPoints -= 25;
+            this->manaPoints -= 15;
             cout<<this->name<<" used frenzy"<<endl;
         }
         break;
