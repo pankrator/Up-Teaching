@@ -6,6 +6,7 @@
 
 using namespace std;
 
+class Entity;
 class Map
 {
 private:
@@ -17,16 +18,9 @@ public:
        entities = new Entity*[100];
     }
 
-    void addEntity(Entity* entity)
-    {
-        entities[entity->getX() + entity->getY() * 10] = entity;
-    }
+    void addEntity(Entity* entity);
 
-//    void move(int x, int y,Entity* ent)
-//    {
-//        entities[ent->getX() + ent->getY() * 10] = NULL;
-//        entities[x + y * 10] = ent;
-//    }
+    void move(int x, int y,Entity* ent);
 
     Entity* getEntity(int x, int y) const { return entities[x + y * 10]; }
 };

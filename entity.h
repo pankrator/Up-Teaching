@@ -31,7 +31,7 @@ public:
     void takeDamage(float damage);
     void takeHealing(int healPoints);
     void equipWeapon(const Weapon& weap);
-    bool move(int x, int y);
+    bool move(int x, int y, Map* board);
 
     virtual int attack() = 0;
     virtual string instanceOf() const = 0;

@@ -34,8 +34,9 @@ int main()
     Entity* enemy = new Orc(generateRandomString(5), 100, 1.2, 1, 1);
     board->addEntity(enemy);
 
-    enemy->move(1, 0);
+    enemy->move(1, 0, board);
+    enemy->move(1, 2, board);
 
-    cout<<board->getEntity(2,1)->getName()<<endl;
+    cout<<board->getEntity(3,3)->getName()<<endl;
     return 0;
 }

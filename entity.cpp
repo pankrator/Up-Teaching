@@ -1,4 +1,5 @@
 #include "entity.h"
+#include "map.h"
 #include <string>
 
 using namespace std;
@@ -28,10 +29,10 @@ void Entity::equipWeapon(const Weapon& weap)
 }
 
 
-bool Entity::move(int x, int y)
+bool Entity::move(int x, int y, Map* board)
 {
     /** TODO: Make sure the place is free before moving **/
-//    board.move(this->x + x, this->y + y, this);
+    board->move(this->x + x, this->y + y, this);
     this->x+=x;
     this->y+=y;
     return true;

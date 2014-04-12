@@ -75,7 +75,7 @@
 
 1397239813 D
 
-1397319588 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
+1397340212 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
 	<string>
 	"weapon.h"
 
@@ -98,14 +98,17 @@
 1395936125 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1397319641 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
+1397321451 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
 	<string>
 	"entity.h"
 
 1397319517 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
 	"entity.h"
 
-1397291806 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
+1397340225 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
+	"entity.h"
+	"map.h"
+	<string>
 
 1395959379 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fight.cpp
 	"hero.h"
@@ -117,7 +120,16 @@
 1397319517 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
 	"hero.h"
 
-1397239813 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+1397340290 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	"map.h"
+	"entity.h"
+	"hero.h"
+	"orc.h"
 
 1397319517 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.cpp
 	"orc.h"
@@ -143,7 +155,11 @@
 	<string>
 	<iostream>
 
-1397242011 z:\niki si\c++ projects\up teaching\up teaching\classtest\map.h
+1397340205 z:\niki si\c++ projects\up teaching\up teaching\classtest\map.h
 	<iostream>
+	"entity.h"
+
+1397340162 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\map.cpp
+	"map.h"
 	"entity.h"
 
