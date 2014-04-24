@@ -18,11 +18,10 @@ public:
        entities = new Entity*[100];
     }
 
-    void addEntity(Entity* entity);
-
-    void move(int x, int y,Entity* ent);
-
     Entity* getEntity(int x, int y) const { return entities[x + y * 10]; }
+
+    void addEntity(Entity* entity);
+    void move(int x, int y,Entity* ent);
 };
 
 
