@@ -75,7 +75,7 @@
 
 1397239813 D
 
-1397340486 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
+1399569839 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
 	<string>
 	"weapon.h"
 
@@ -98,29 +98,29 @@
 1395936125 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1397321451 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
+1399569840 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
 	<string>
 	"entity.h"
 
-1397319517 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
+1399569840 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
 	"entity.h"
 
-1397340225 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
+1399569839 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
 	"entity.h"
 	"map.h"
 	<string>
 
-1395959379 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fight.cpp
+1399569791 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\fight.cpp
 	"hero.h"
 	"orc.h"
 	<cstdlib>
 	<ctime>
 	<iostream>
 
-1397319517 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
+1399569839 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
 	"hero.h"
 
-1397340290 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+1399569840 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
 	<iostream>
 	<vector>
 	<stdlib.h>
@@ -131,7 +131,7 @@
 	"hero.h"
 	"orc.h"
 
-1397319517 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.cpp
+1399569840 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.cpp
 	"orc.h"
 
 1395936125 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
@@ -151,15 +151,15 @@
 1395402294 source:c:\huko\up-teaching\main.cpp
 	<iostream>
 
-1397319517 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.h
+1399569840 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.h
 	<string>
 	<iostream>
 
-1397340205 z:\niki si\c++ projects\up teaching\up teaching\classtest\map.h
+1399569840 z:\niki si\c++ projects\up teaching\up teaching\classtest\map.h
 	<iostream>
 	"entity.h"
 
-1397340162 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\map.cpp
+1399569840 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\map.cpp
 	"map.h"
 	"entity.h"
 
