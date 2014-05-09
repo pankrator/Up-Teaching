@@ -163,3 +163,53 @@
 	"map.h"
 	"entity.h"
 
+1397195933 source:d:\oop project\up-teaching\hero.cpp
+	"hero.h"
+
+1399614413 d:\oop project\up-teaching\hero.h
+	<string>
+	"entity.h"
+
+1399614413 d:\oop project\up-teaching\entity.h
+	<string>
+	"weapon.h"
+
+1397195933 d:\oop project\up-teaching\weapon.h
+	<string>
+	<iostream>
+
+1399618902 source:d:\oop project\up-teaching\main.cpp
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	"map.h"
+	"entity.h"
+	"hero.h"
+	"orc.h"
+	"fight.h"
+
+1399618254 d:\oop project\up-teaching\map.h
+	<iostream>
+	"entity.h"
+
+1399614409 d:\oop project\up-teaching\orc.h
+	"entity.h"
+
+1397195933 source:d:\oop project\up-teaching\orc.cpp
+	"orc.h"
+
+1399614413 source:d:\oop project\up-teaching\entity.cpp
+	"entity.h"
+	"map.h"
+	<string>
+
+1399618419 source:d:\oop project\up-teaching\map.cpp
+	"map.h"
+	"entity.h"
+
+1399618845 d:\oop project\up-teaching\fight.h
+	"entity.h"
+	<math.h>
+

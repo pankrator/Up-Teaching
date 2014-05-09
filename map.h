@@ -16,12 +16,17 @@ public:
     Map()
     {
        entities = new Entity*[100];
+       for(int i = 0; i < 100; i++)
+       {
+           entities[i] = NULL;
+        }
     }
 
     Entity* getEntity(int x, int y) const { return entities[x + y * 10]; }
 
     void addEntity(Entity* entity);
     void move(int x, int y,Entity* ent);
+    void printMap();
 };
 
 
